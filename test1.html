@@ -7,15 +7,34 @@
     <title>Number Intelligence Test - Test 1</title>
     <script type="text/javascript" src="test.js"></script>
   </head>
+
   <body lang="en-US">
-    <ol>
-      <li>8 , 3 -> 51224</li>
-      <li>4 , 2 -> 268</li>
-      <li>9 , 5 -> 41445</li>
-      <li>7 , 7 -> </li>
-    </ol>
-    <p>What is the answer to number 4?</p>
-    <input type="text" id="test1answer" class="form-control input-md"
-        placeholder="answer" />
+    <div class="row">
+      <div class="col-xs-6 col-md-4">1.) 7 , 3 -> 41021</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">2.) 8 , 5 -> 31340</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">3.) 30 , 23 -> 753690</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">4.) 56 , 25 -> 31811400</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4" id="T1Group">5.) 182 , 49 ->
+        <input type="text" id="t1Answer"
+              placeholder="Put answer here" />
+          <button type="button" onclick="validateT1Answer();">Check Answer</button>
+          <span id="T1AnswerError" class="control-label hidden-message"></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4">
+        <button type="button" onclick="toTest2();">Next Question</button>
+      </div>
+    </div>
+
   </body>
+
 </html>
